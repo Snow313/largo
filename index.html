@@ -1,0 +1,416 @@
+<html>
+  <head>
+  
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Largo Travel and Resort</title>
+
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+
+  <link rel="stylesheet" type = "text/css" href="style.css">
+    
+
+  
+    <body>
+
+      <header class="header">
+            <a href="#" class="lg">
+            <img src="logo.png" alt="logo">
+            </a>
+
+                <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">contact</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+  
+            <div  href="#home" class="icons">
+                <a href="#">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <button  class='loginbtn' onclick="document.getElementById('login-form').style.display='block'">Login</button>
+                </a>
+            </div>
+  
+      
+  
+        <div class="search-form">
+          
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+
+
+      </header>
+
+
+  <!-- home section starts  -->
+
+<section class="home" id="home">
+
+
+
+  <div class="content">
+      <h3>discover world of luxury & tranquility</h3>
+      <p>Nestled amidst breathtaking landscapes and pristine shores,Our resort offers an univealed escape from the ordinary</p>
+      <a href="#" class="btn">Discover more</a>
+  </div>
+
+
+
+  <div id='login-form'class='login-page'>
+      <div   class="form-box">
+          <div class='button-box'>
+              <div id='btn'></div>
+              <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+              <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+          </div>
+          <form id='login' class='input-group-login'>
+              <input type='text'class='input-field'placeholder='Email ' required >
+      <input type='password'class='input-field'placeholder='Enter Password' required>
+      <input type='checkbox'class='check-box'><span>Remember Password</span>
+      <button type='submit'class='submit-btn'>Log in</button>
+      <button type="link"class='link-button'>
+       <a href="https://accounts.google.com/AddSession/signinchooser?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=si&authuser=0&flowName=GlifWebSignIn&flowEntry=AddSession"
+        class="link-btn" target="_blank">Login with Googl</a>
+      </button>
+   </form>
+   <form id='register' class='input-group-register'>
+       <input type='text'class='input-field'placeholder='First Name' required>
+       <input type='text'class='input-field'placeholder='Last Name ' required>
+       <input type='email'class='input-field'placeholder='Email ' required>
+       <input type='password'class='input-field'placeholder='Enter Password' required>
+       <input type='password'class='input-field'placeholder='Confirm Password'  required>
+       <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+              <button type='submit'class='submit-btn'>Register</button>
+       </form>
+      </div>
+  </div>
+
+
+ 
+  <script>
+      var x=document.getElementById('login');
+  var y=document.getElementById('register');
+  var z=document.getElementById('btn');
+  function register()
+  {
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+  }
+  function login()
+  {
+    x.style.left='50px';
+    y.style.left='450px';
+    z.style.left='0px';
+  }
+</script>
+<script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function(event) 
+      {
+          if (event.target == modal) 
+          {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+  <h1 class="heading"> About<span> & Services</span></h1>
+
+  <div class="row">
+
+      <div class="image">
+          <img src="resortimg2.png" alt="">
+      </div>
+
+      <div class="content">
+          <h3>Welcome to Largo Resort: Where Exquisite Experiences Await</h3>
+          <p>Largo Resort welcomes you to a realm of extraordinary beauty and impeccable service. Nestled in a breathtaking setting, our resort is a sanctuary of indulgence and tranquility. With a passion for creating unforgettable moments, we strive to exceed your expectations at every turn. </p>
+          <p>Immerse yourself in a world of luxury and sophistication as we curate exceptional experiences tailored to your desires. Discover the essence of true relaxation and embark on a remarkable journey at Largo Resort, where every detail is designed to inspire and delight.</p>
+          <a href="#" class="btn">learn more</a>
+      </div>
+
+  </div>
+
+  <div class="row-two">
+
+    <div class="content">
+      <nav>
+        <ul id="items">
+          <li><a href="#">Exquisite Accommodations</a></li>
+          <li><a href="#">Oceanfront Retreats</a></li>
+          <li><a href="#">Presidential Penthouse</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul id="items">
+          <li><a href="#">Exquisite Accommodations</a></li>
+          <li><a href="#">Oceanfront Retreats</a></li>
+          <li><a href="#">Presidential Penthouse</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul id="items">
+          <li><a href="#">Exquisite Accommodations</a></li>
+          <li><a href="#">Oceanfront Retreats</a></li>
+          <li><a href="#">Presidential Penthouse</a></li>
+        </ul>
+      </nav>
+      
+        <a href="#" class="btn">learn more</a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<section class="services" id="services">
+
+
+  <div class="box-container">
+
+      <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>affordable hotels</h3>
+          <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+      </div>
+      <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>food and drinks</h3>
+          <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+      </div>
+      <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safty guide</h3>
+          <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+      </div>
+      <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>fastest travel</h3>
+          <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+      </div>
+      <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>adventures</h3>
+          <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+      </div>
+  </div>
+
+
+
+</section>
+<!-- services section ends -->
+
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading"> Gal<span>lery</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+          <img src="g-1.jpg" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-2.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-3.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>LLargo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-4.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-5.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-6.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-7.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-8.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="g-9.png" alt="">
+          <div class="content">
+              <h3>Hotel Name</h3>
+              <p>Largo Resort Company's gallery section is a captivating showcase of their luxurious and breathtaking resorts worldwide.</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+  </div>
+  
+
+</section>
+
+<!-- menu section ends -->
+ 
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> b<span>logs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="g-3.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Oceanfront Retreats</a>
+                <span>by admin john deo</span>
+                <p> Nestled in a breathtaking setting, our resort is a sanctuary of indulgence and tranquility</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="g-5.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Oceanfront Retreats</a>
+                <span>by admin john deo</span>
+                <p>L Nestled in a breathtaking setting, our resort is a sanctuary of indulgence and tranquility</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="g-8.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Oceanfront Retreats</a>
+                <span>by admin john deo</span>
+                <p> Nestled in a breathtaking setting, our resort is a sanctuary of indulgence and tranquility</p>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+   
+
+
+    <div class="row">
+
+        
+        
+        <form action="" class="formm">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="subject">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" vlaue="send message">
+
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+
+      
+        
+
+<!-- custom js file link  -->
+<script src="/script.js"></script>
+        
+    </body>
+</html>
